@@ -5433,57 +5433,7 @@
 		</JointSet>
 		<!--Controllers that provide the control inputs for Actuators.-->
 		<ControllerSet name="controllerset">
-			<objects>
-				<PrescribedController name="inverter_controls_r">
-					<!--Flag (true or false) indicating whether or not the controller is enabled.-->
-					<enabled>true</enabled>
-					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will control all the actuators in the model-->
-					<actuator_list>ext_hal_r flex_dig_r flex_hal_r tib_post_r</actuator_list>
-					<!--Functions (one per control) describing the controls for actuatorsspecified for this controller.-->
-					<FunctionSet name="ControlFunctions">
-						<objects>
-							<Constant>
-								<value>0</value>
-							</Constant>
-							<Constant>
-								<value>0</value>
-							</Constant>
-							<Constant>
-								<value>0</value>
-							</Constant>
-							<Constant>
-								<value>0</value>
-							</Constant>
-						</objects>
-						<groups />
-					</FunctionSet>
-				</PrescribedController>
-				<PrescribedController name="everter_controls_r">
-					<!--Flag (true or false) indicating whether or not the controller is enabled.-->
-					<enabled>true</enabled>
-					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will control all the actuators in the model-->
-					<actuator_list>ext_dig_r per_brev_r per_long_r per_tert_r</actuator_list>
-					<!--Functions (one per control) describing the controls for actuatorsspecified for this controller.-->
-					<FunctionSet name="ControlFunctions">
-						<objects>
-							<Constant>
-								<value>0</value>
-							</Constant>
-							<Constant>
-								<value>0</value>
-							</Constant>
-							<Constant>
-								<value>0</value>
-							</Constant>
-							<Constant>
-								<value>0</value>
-							</Constant>
-						</objects>
-						<groups />
-					</FunctionSet>
-				</PrescribedController>
-			</objects>
-			<groups />
+
 		</ControllerSet>
 		<!--Constraints in the model.-->
 		<ConstraintSet name="constraintset">
